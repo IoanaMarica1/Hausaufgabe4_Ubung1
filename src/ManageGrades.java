@@ -56,5 +56,16 @@ public class ManageGrades {
         }
         return abgerundetenNoten;
     }
+    //4
+    public int maximalAbgerundeteNote(int[] Note){
+        int[] AbgerundetenNoten = abgerundetenNoten(Note);
+        int max=0;
+        for(int n:AbgerundetenNoten){
+            if(n>max){
+                max=n;
+            }
+        }
+        return max;
+    }
 
 }
